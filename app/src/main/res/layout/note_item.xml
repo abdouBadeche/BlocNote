@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_marginBottom="3dp"
+    android:elevation="2dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    android:paddingTop="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:minHeight="40dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tvTitleNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="2dp"
+            android:layout_weight="5"
+            android:text="Note title"
+            android:textSize="16dp"
+            android:maxHeight="25dp"
+            android:height="25dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:background="@color/black"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+            <ImageView
+                android:id="@+id/btndelete"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/trash" />
+
+            <TextView
+                android:id="@+id/tvDateNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingHorizontal="30dp"
+                android:text="12-12-2022"
+                android:textAlignment="viewEnd"
+                android:textColor="@android:color/darker_gray"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/noteimageViewer"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/test_note" />
+
+        <TextView
+            android:id="@+id/tvNoteDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:maxHeight="53dp"
+            android:paddingHorizontal="30dp"
+            android:text="note description ou image description"
+            android:textAlignment="center"
+            android:textColor="#090909"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

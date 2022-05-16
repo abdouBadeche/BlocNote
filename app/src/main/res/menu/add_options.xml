@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/add_options"
+        android:icon="@drawable/add_note"
+        android:title="Ajouter une nouvelle"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/note"
+                android:icon="@drawable/note_collante"
+                android:title="Note"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/image"
+                android:icon="@drawable/image_icon"
+                android:title="Image"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/carte"
+                android:icon="@drawable/id_card"
+                android:title="Carte"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/taches"
+                android:icon="@drawable/noter"
+                android:title="Taches"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+</menu>

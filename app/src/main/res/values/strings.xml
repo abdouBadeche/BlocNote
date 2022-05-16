@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BlocNote</string>
+    <integer name="column">2</integer>
+</resources>

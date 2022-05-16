@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/filter_options"
+        android:title="filtrage/Trie"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/filtrage"
+                android:title="Filtrer par"
+                app:showAsAction="never"
+                >
+                <menu>
+                    <item
+                        android:id="@+id/note_filtrage"
+                        android:icon="@drawable/note_collante"
+                        android:title="Note"
+                        app:showAsAction="never" />
+                    <item
+                        android:id="@+id/image_filtrage"
+                        android:icon="@drawable/image_icon"
+                        android:title="Image"
+                        app:showAsAction="never" />
+                    <item
+                        android:id="@+id/carte_filtrage"
+                        android:icon="@drawable/id_card"
+                        android:title="Carte"
+                        app:showAsAction="never" />
+                    <item
+                        android:id="@+id/taches_filtrage"
+                        android:icon="@drawable/noter"
+                        android:title="Taches"
+                        app:showAsAction="never" />
+                </menu>
+            </item>
+            <item
+                android:id="@+id/sorting"
+                android:title="Trier par"
+                app:showAsAction="never"
+                >
+                <menu>
+                    <item
+                        android:id="@+id/alpha_sort"
+                        android:title="Alpha"
+                        app:showAsAction="never" />
+                    <item
+                        android:id="@+id/date_sort"
+                        android:title="Date"
+                        app:showAsAction="never" />
+
+                </menu>
+            </item>
+        </menu>
+    </item>
+</menu>

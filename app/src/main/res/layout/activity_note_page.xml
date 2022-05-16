@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotePage">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+
+                android:elevation="2dp"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:scaleX="1"
+                        android:scaleY="1"
+                        app:srcCompat="@drawable/writing" />
+                    <TextView
+                        android:id="@+id/AddAppTitleTop"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="10"
+                        android:paddingHorizontal="10dp"
+                        android:text="Note Page"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textAlignment="viewStart"
+                        android:textStyle="bold|italic"
+                        android:layout_width="1dp"/>
+
+                    <ImageView
+                        android:id="@+id/imageCancel"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_weight="1"
+                        android:scaleX="1"
+                        android:scaleY="1"
+                        app:srcCompat="@drawable/close" />
+
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/CardView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginBottom="3dp"
+                        android:elevation="2dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp"
+                        android:paddingTop="0dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:minHeight="40dp"
+                            android:orientation="vertical">
+
+
+
+                            <LinearLayout
+                                android:id="@+id/tvAddNoteTitleSpace"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                >
+
+
+                                <TextView
+                                    android:id="@+id/tvOneNoteTitleValue"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingHorizontal="10dp"
+                                    android:paddingVertical="2dp"
+                                    android:layout_weight="1"
+                                    android:text="Title"
+                                    android:textSize="16dp"
+                                    android:textStyle="bold |italic"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="@color/black"
+                                    />
+                            </LinearLayout>
+
+
+                            <ImageView
+                                android:layout_marginTop="30dp"
+                                android:id="@+id/tvOneNoteImage"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                app:srcCompat="@drawable/add_image" />
+
+                            <LinearLayout
+                                android:id="@+id/tvAddNoteDescription"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop="30dp"
+                                >
+
+
+                                <TextView
+                                    android:id="@+id/tvOneNoteDescriptionValue"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingHorizontal="10dp"
+                                    android:layout_weight="2"
+                                    android:text="Note Description"
+                                    android:textSize="16dp"
+                                    android:textStyle="italic"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="@color/black"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/tvDateNote"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:paddingHorizontal="30dp"
+                                    android:text="12-12-2022"
+                                    android:textAlignment="viewEnd"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:textStyle="italic" />
+                            </LinearLayout>
+
+
+
+                            <ImageView
+                                android:id="@+id/btndelete"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                app:srcCompat="@drawable/trash" />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

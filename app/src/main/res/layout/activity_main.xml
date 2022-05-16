@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+
+                android:elevation="2dp"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/menu_btn"
+                        android:layout_width="10dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:scaleX="1"
+                        android:scaleY="1"
+                        app:srcCompat="@drawable/logo" />
+
+                    <TextView
+                        android:id="@+id/AppTitle"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="10"
+                        android:paddingHorizontal="10dp"
+                        android:text=""
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:textStyle="bold|italic"
+                        android:layout_width="1dp"/>
+
+                    <ImageView
+                        android:id="@+id/imageAdd"
+                        android:layout_width="20dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:scaleX="1"
+                        android:scaleY="1"
+                        app:srcCompat="@drawable/add_note" />
+
+                    <ImageView
+                        android:id="@+id/imageFilter"
+                        android:layout_width="20dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:scaleX="1"
+                        android:scaleY="1"
+                        app:srcCompat="@drawable/filter" />
+
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:id="@+id/filtrage_space"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/filtrage_space_l1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_weight="2"
+                    android:paddingHorizontal="10dp"
+                    android:text="Filter par"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold|italic"
+                    android:layout_width="1dp"/>
+                <TextView
+                    android:id="@+id/filtrage_space_l2"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_weight="2"
+                    android:paddingHorizontal="10dp"
+                    android:text="Note"
+                    android:textColor="#909090"
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:textStyle="italic"
+                    android:layout_width="1dp"/>
+
+                <ImageView
+                    android:id="@+id/filtrage_space_delete"
+                    android:layout_weight="1"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    app:srcCompat="@drawable/trash" />
+            </LinearLayout>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <FrameLayout
+                    android:id="@+id/flFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="772dp"
+                    android:background="#FFFFFF">
+
+                </FrameLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
